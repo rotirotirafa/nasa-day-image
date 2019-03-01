@@ -7,10 +7,40 @@
     <title>Imagem do dia - NASA</title>
     <link rel="stylesheet" href="node_modules/bulma/css/bulma.min.css">
 </head>
-<body ng-app="app">
-    <section ng-controller="DayImage">
-        {{msg}}
-    </section>   
+<body ng-app="app" ng-controller="DayImage">
+
+<div class="box">
+        <article class="media">
+          <div class="media-left">
+              <a ng-click="plusImage">
+                <figure class="image is-64x64">
+                    <img src="{{infoImage.url}}" alt="{{title}}">
+                </figure>
+              </a>
+          </div>
+          <div class="media-content">
+            <div class="content">
+                <p class="is-small">Description: {{infoImage.explanation}}</p>
+            </div>
+            <nav class="level is-mobile">
+              <div class="level-left">
+                <div class="columns">
+                    <div class="column">{{infoImage.title}} from {{infoImage.copyright}} - {{infoImage.date}}</div>
+                </div>                
+              </div>
+            </nav>
+          </div>
+          <!-- <div ng-class="{'is-active': open}" class="modal">
+                <div class="modal-background"></div>
+                <div class="modal-content">
+                  <p class="image is-4by3">
+                    <img src="{{infoImage.hdurl}}" alt="{{title}}">
+                  </p>
+                </div>
+                <button class="modal-close is-large" aria-label="close"></button>
+              </div> -->
+        </article>
+      </div>
 </body>
 <script src="node_modules/angular/angular.min.js"></script>
 <script src="node_modules/angular-resource/angular-resource.min.js"></script>

@@ -8,8 +8,8 @@ app.factory('NasaEndpoint', ['$resource', function ($resource) {
 }]);
 
 app.controller('DayImage', ['$scope', 'NasaEndpoint', function($scope, NasaEndpoint) {
-    $scope.msg = 'F12 - Olha o console do navegador.'
     $scope.infoImage = {}
+    $scope.open = !$scope.open;
     //request utilizando Resource
     NasaEndpoint.get(
         {
@@ -17,12 +17,17 @@ app.controller('DayImage', ['$scope', 'NasaEndpoint', function($scope, NasaEndpo
         },
         {},
         function(response){
+            $scope.infoImage = response;
             console.log(response);
         },
         function(error){
             console.log(error);
         }
 
-    )
+    );
+        //Adicionar funcionalidade de abrir a imagem em grande tamanho
+    // $scope.plusImage = function() {
+    //     $scope.open = true;
+    // }
   }]);
 
