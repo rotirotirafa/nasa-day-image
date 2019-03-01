@@ -1,0 +1,25 @@
+{
+  "name": "nasa-day-image",
+  "version": "1.0.0",
+  "description": "Consumo de API da NASA",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rotirotirafa/nasa-day-image.git"
+  },
+  "keywords": [
+    "nasa"
+  ],
+  "author": "Rafael Rotiroti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rotirotirafa/nasa-day-image/issues"
+  },
+  "homepage": "https://github.com/rotirotirafa/nasa-day-image#readme",
+  "dependencies": {
+    "angular": "^1.7.7"
+  }
+}
