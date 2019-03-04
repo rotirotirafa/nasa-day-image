@@ -2,13 +2,12 @@ var app = angular.module('app', [
     'ngResource'
 ]);
 
-
 app.factory('NasaEndpoint', ['$resource', function ($resource) {
     return $resource('https://api.nasa.gov/planetary/apod');
 }]);
 
-app.controller('DayImage', ['$scope', 'NasaEndpoint', function($scope, NasaEndpoint) {
-    $scope.infoImage = {}
+app.controller('DayImage', ['$scope', 'NasaEndpoint', '$http', function($scope, NasaEndpoint, $http) {
+    $scope.nasaImageInfo = {}
     $scope.open = !$scope.open;
     //request utilizando Resource
     NasaEndpoint.get(
@@ -17,7 +16,7 @@ app.controller('DayImage', ['$scope', 'NasaEndpoint', function($scope, NasaEndpo
         },
         {},
         function(response){
-            $scope.infoImage = response;
+            $scope.nasaImageInfo = response;
             console.log(response);
         },
         function(error){
