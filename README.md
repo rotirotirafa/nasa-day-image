@@ -5,3 +5,11 @@ Fonte: [NASA] - https://api.nasa.gov/index.html
 
 # Instalação:
     npm install
+
+# Gulp
+    npm install -g gulp
+
+# Build
+    gulp js
+
+    gulp angular

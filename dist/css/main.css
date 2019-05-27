@@ -1,0 +1,42 @@
+/* 
+font-family: 'Abel', sans-serif;
+font-family: 'Exo 2', sans-serif;
+font-family: 'Ubuntu Mono', monospace;
+*/
+/* @import url('https://fonts.googleapis.com/css?family=Abel|Exo+2'); */
+
+body{
+    font-family: 'Ubuntu Mono', monospace;
+    background-color: #000000;
+    color: #F1F1F1;
+}
+
+h1{
+    font-family: 'Ubuntu Mono', monospace;
+    color: #F1F1F1;
+}
+
+.title-section{
+    padding: 1em;
+}
+
+.title{
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #F1F1F1;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+figcaption, p{
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+.imagem-nasa figcaption{
+    padding: 1em;
+    text-align: justify;
+}
+
+.footer{
+    background-color: #000000 ;
+    color: #F1F1F1;
+}
