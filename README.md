@@ -10,6 +10,17 @@ Fonte: [NASA] - https://api.nasa.gov/index.html
     npm install -g gulp
 
 # Build
+
+    Estes builds são provisórios pois ainda serão melhorados e otimizados.
+
     gulp js
 
     gulp angular
+
+    gulp angular-resource
+
+    gulp css 
+
+    gulp bulma
+
+
