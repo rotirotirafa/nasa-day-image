@@ -24,3 +24,6 @@ Fonte: [NASA] - https://api.nasa.gov/index.html
     gulp bulma
 
 
+#OBS 
+
+Os comandos estão desatualizados, por gentileza caso tenha alguma dificultade abra uma Issue
